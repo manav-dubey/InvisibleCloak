@@ -1,42 +1,38 @@
-# Invisible Cloak using OpenCV
+# **Invisible Cloak using OpenCV**
 
-This project implements the famous "invisible cloak" effect using OpenCV and Python. The program allows the user to capture a background image and then replace a specific color (light pink, by default) in real-time with the background, creating the illusion of invisibility.
+This project implements the famous **"invisible cloak"** effect using OpenCV and Python. The program allows the user to capture a background image and then replace a specific color (**light pink**, by default) in real-time with the background, creating the illusion of invisibility.
 
-## Features
-- Capture background using the 'b' key
-- Real-time detection and removal of pink-colored cloth
-- Adjustable HSV range using trackbars for fine-tuning
-- Noise removal for better detection
-- Display of real-time HSV values for better debugging
+## **Features**
+- **Capture background** using the 'b' key
+- **Real-time detection** and removal of pink-colored cloth
+- **Adjustable HSV range** using trackbars for fine-tuning
+- **Noise removal** for better detection
+- **Display of real-time HSV values** for better debugging
 
-## Requirements
+## **Requirements**
 Make sure you have the following dependencies installed before running the script:
 
 ```sh
 pip install opencv-python numpy
 ```
 
-## Usage
-1. Run the script:
+## **Usage**
+1. **Run the script:**
    ```sh
    python invisible_cloak.py
    ```
 2. A window will open displaying the camera feed.
-3. Press 'b' to capture the background.
-4. Hold a light pink cloth in front of the camera to observe the cloak effect.
-5. Use the HSV trackbars to fine-tune the color detection.
-6. Press 'q' to exit the program.
+3. **Press 'b'** to capture the background.
+4. Hold a **light pink cloth** in front of the camera to observe the cloak effect.
+5. **Use the HSV trackbars** to fine-tune the color detection.
+6. **Press 'q'** to exit the program.
 
-## How It Works
-1. The background is captured when the user presses 'b'.
-2. The live video feed is converted to the HSV color space.
-3. The program detects pink pixels using a predefined HSV range (adjustable via trackbars).
-4. The detected pixels are replaced with the previously captured background.
-5. The final image is displayed with the illusion of invisibility.
+## **How It Works**
+1. **The background is captured** when the user presses 'b'.
+2. The **live video feed is converted** to the HSV color space.
+3. The program **detects pink pixels** using a predefined HSV range (**adjustable via trackbars**).
+4. The detected pixels are **replaced with the previously captured background**.
+5. The final image is displayed with the illusion of **invisibility**.
 
-## Preview
-![Invisible Cloak Example](https://user-images.githubusercontent.com/your-image-url.png)
 
-## License
-This project is open-source and available under the MIT License.
 
